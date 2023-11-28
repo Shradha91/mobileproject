@@ -4,7 +4,7 @@
 
 - `/`
 
-![Home](./screenshot/home.png)
-![Login](./screenshot/login.png)
-![SignUp](./screenshot/signup.png)
-![Contact Us](./screenshot/contact.png)
+![Home](./screenshot/homess.png)
+![Login](./screenshot/loginss.png)
+![SignUp](./screenshot/signupss.png)
+![Contact Us](./screenshot/contactss.png)
