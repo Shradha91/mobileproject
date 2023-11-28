@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "mobillo"
+version = "0.1.0"
+description = ""
+authors = ["siddhantCodes <siddhantk232@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2.7"
+dj-database-url = "^2.1.0"
+psycopg2-binary = "^2.9.9"
+whitenoise = {extras = ["brotli"], version = "^6.6.0"}
+gunicorn = "^21.2.0"
+pillow = "^10.1.0"
+django-bootstrap4 = "^23.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

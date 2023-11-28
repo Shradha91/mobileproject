@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>List of Mobiles</h1>
+    <div class="card-columns">
+        {% for mobile in mobiles %}
+            <div class="card">
+                <img src="{{ mobile.main_image.url }}" class="card-img-top" alt="{{ mobile.name }} Image">
+                <div class="card-body">
+                    <h5 class="card-title">{{ mobile.name }}</h5>
+                    <p class="card-text">
+                        {% if mobile.description|length > 100 %}
+                            {{ mobile.description|truncatechars:100 }}
+                        {% else %}
+                            {{ mobile.description }}
+                        {% endif %}
+                    </p>
+                    <a href="{{ mobile.get_absolute_url }}" class="btn btn-primary">Details</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
